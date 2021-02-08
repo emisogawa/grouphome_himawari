@@ -1,0 +1,35 @@
+/******************************************************************
+
+Stylesheet: 600px以上のタブレットやモニタで適用
+
+******************************************************************/
+
+
+.section03{
+    // height: 300px;
+
+    &-ul{
+      flex-direction: row;
+      flex-wrap:wrap;
+      justify-content: space-between;
+      align-items: end;
+    
+      &-li{
+        flex-basis:33%;
+        padding:0;
+        // @extend .mb-lg;
+      }
+    
+  
+    }
+  }
+  
+.exercise >.list{
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
+
+.exercise > .list >.item{
+    flex-basis: 35%;
+}

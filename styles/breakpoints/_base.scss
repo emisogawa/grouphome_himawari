@@ -1,0 +1,223 @@
+/******************************************************************
+
+Stylesheet: ベーススタイル
+
+******************************************************************/
+body {
+  font-family: "Kameron", 'Noto Serif JP',"Noto Sans JP", sans-serif;
+
+}
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+.font-sm {
+  font-size: 14px;
+}
+.font-md {
+  font-size: 17px;
+}
+.font-lr {
+  font-size: 30px;
+}
+.font-lg {
+  font-size: 25px;
+}
+.mb-sm {
+  margin-bottom: 16px !important;
+}
+
+.mb-md {
+  margin-bottom: 30px !important;
+}
+.mb-lg {
+  margin-bottom: 80px !important;
+}
+
+.mt-md {
+  margin-top: 30px !important;
+}
+.pb-sm {
+  padding-bottom: 16px !important;
+}
+.pb-lg {
+  padding-bottom: 80px !important;
+}
+
+.p-sm {
+  padding: 16px;
+}
+.content-width {
+  width: 90%;
+  margin: 0 auto;
+  max-width: $contentMaxWidth1070;
+}
+
+.content-width-0 {
+  width: 100%;
+  margin: 0 auto;
+  max-width: $contentMaxWidth720;
+}
+
+.main-title {
+  @extend .font-lg;
+  @extend .mt-md;
+  @extend .mb-md;
+  font-weight: 100;
+  
+  display: block;
+  text-align: center;
+}
+.sub-title {
+  @extend .font-sm;
+  color: $cSubTitle;
+}
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  justify-content: space-between;
+}
+.purple {
+  color: $cWineRed;
+}
+
+/******************************************************************
+
+以下、スマホ画面
+
+******************************************************************/
+
+.section01 {
+  background: url(../images/logo_himawari.png) no-repeat center top 10px $cBg01;
+  position: relative;
+
+  //  &::before{
+  //   background:url(../images/pattern_diamond.png) repeat-x top left;
+  //   content:"";
+  //   background-size: auto 100%;
+  //   position: absolute;
+  //   left:0;
+  //   top:0;
+  //   z-index:1;
+
+  //   }
+  & .container {
+    @extend .content-width;
+  }
+  width: 100%;
+
+  &-heading {
+    @extend .flex;
+    @extend .content-width-0;
+  }
+
+  &-ul {
+    list-style: none;
+    @extend .flex;
+
+    &-li {
+      @extend .mb-md;
+      @extend .p-sm;
+      @extend .flex-row;
+      background-color: $cWhite;
+
+          
+
+      & > .info{
+
+        flex-basis:50%;
+         height: auto;
+         text-align: center;
+
+         & > a{
+           display:block;
+         }
+      }
+
+      & > .img{
+        flex-basis:40%;
+        height: 100%;
+
+        box-shadow:-15px 15px #5e5a54;
+      }
+    }
+  }
+}
+
+.section02{
+  height: 300px;
+  background:url(../images/cherryblossom.jpg) no-repeat center;
+  background-size:cover;
+  position:relative;
+
+  & > .recruit {
+    width:200px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    
+    
+
+  }
+}
+
+.section03{
+  background: url(../images/background_dots.png);
+  & .container {
+    @extend .content-width;
+  }
+
+  &-heading {
+    @extend .flex;
+  }
+
+  &-ul {
+    list-style: none;
+    @extend .flex;
+
+    &-li {
+      @extend .mb-md;
+      @extend .p-sm;
+      @extend .flex-row;
+
+      // & > img{
+      //   width:100%;
+      // }
+    }
+  }
+
+}
+
+.section04{
+  & .container {
+    @extend .content-width;
+  }
+
+}
+
+.exercise {
+  background-color: pink;
+  height: 400px;
+  @extend .content-width;
+
+  & > .list {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    justify-content: center;
+  }
+
+  & > .list > .item {
+    height: 300px;
+    background-color: black;
+    @extend .mb-lg;
+  }
+}

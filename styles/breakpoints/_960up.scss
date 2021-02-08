@@ -1,0 +1,59 @@
+/******************************************************************
+
+Stylesheet: 960px以上のモニタで適用
+
+******************************************************************/
+.font-sm {
+  font-size: 16px;
+}
+.font-md {
+  font-size: 19px;
+}
+.font-lr {
+  font-size: 23px;
+}
+.font-lg {
+  font-size: 36px;
+}
+.mb-lg {
+  margin-bottom: 150px !important;
+}
+.pb-lg {
+  padding-bottom: 150px !important;
+}
+
+.section01{
+  &-heading >.img{
+    max-width: 550px;
+    margin:0 auto;
+  
+  }
+
+  &-ul{
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: space-between;
+  
+    &-li{
+      flex-basis:45%;
+    }
+  
+
+  }
+}
+
+
+
+.section02{
+    height: 400px;
+
+    & >.recruit{
+      width:300px;
+    }
+}
+
+
+
+
+
+
