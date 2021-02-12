@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>グループホームひまわり｜「その人らしさ」を大切に</title>
+    <title>グループホームひまわり｜その人らしさを大切に</title>
     <meta
       name="description"
       content="グループホームひまわりは、北海道河東郡士幌町にある、認知症高齢者向けのグループホームです。認知症という生活障害をもたれているお年寄りが、家庭的な環境の中でその人らしい豊かな生活ができることを目指しています。"
@@ -24,6 +24,31 @@
   <body>
     <div id="global-container">
       <div id="container">
+        <div class="mobile-menu__cover"></div>
+        <header class="header">
+          <div class="header__inner">
+            <div class="header__logo">
+              <div class="logo__img">
+                <img src="images/banner_logo.png" alt="" />
+              </div>
+            </div>
+            <nav class="header__nav">
+              <ul class="header__ul">
+                <li class="header__li"><a href="#">入所</a></li>
+                <li class="header__li"><a href="#">施設案内</a></li>
+                <li class="header__li"><a href="#">生活について</a></li>
+                <li class="header__li"><a href="#">法人概要</a></li>
+                <li class="header__li"><a href="#">採用情報</a></li>
+              </ul>
+            </nav>
+            <button class="mobile-menu__btn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+        </header>
+
         <div id="content">
           <div id="main-content">
             <main>
@@ -141,26 +166,22 @@
           </div>
         </div>
       </div>
-    </div>
-
-    <div class="exercise">
-      <ul class="list">
-        <li class="item">list01</li>
-        <li class="item">list02</li>
-      </ul>
+      <nav class="header__nav">
+        <ul class="header__ul">
+          <li class="header__li item"><a href="#">Service</a></li>
+          <li class="header__li item"><a href="#">Company</a></li>
+          <li class="header__li item">
+            <a class="btn filled" href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
     </div>
 
     <footer class="footer">
       <div class="footer_container">
-        <div class="logo">
+        <div class="footer__logo">
           <div class="logo__img">
-            <img src="images/logo_large.png" alt="" />
-          </div>
-          <div class="logo__text">
-            <p class="logo__desc">
-              士幌の認知症高齢者向けの<br />グループホームなら
-            </p>
-            <p class="logo__name">ひまわり</p>
+            <img src="images/banner_logo.png" alt="" />
           </div>
         </div>
         <nav class="footer__nav">
@@ -173,7 +194,9 @@
           </ul>
         </nav>
       </div>
-      <div class="footer__copyright">&copy;ひまわり</div>
+      <div class="footer__copyright">
+        Copyright&copy;有限会社ひまわり All rights reserved.
+      </div>
     </footer>
 
     <script src="scripts/libs/text-animation.js"></script>
