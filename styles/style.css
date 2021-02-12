@@ -765,7 +765,7 @@ img {
   vertical-align: bottom;
 }
 
-.font-sm, .sub-title {
+.font-sm, .sub-title, .logo__desc {
   font-size: 14px;
 }
 
@@ -777,7 +777,7 @@ img {
   font-size: 30px;
 }
 
-.font-lg, .main-title {
+.font-lg, .main-title, .logo__name {
   font-size: 25px;
 }
 
@@ -793,7 +793,11 @@ img {
   margin-bottom: 80px !important;
 }
 
-.mt-md, .main-title {
+.mt-sm {
+  margin-top: 16px !important;
+}
+
+.mt-md, .main-title, .footer__copyright {
   margin-top: 30px !important;
 }
 
@@ -809,7 +813,7 @@ img {
   padding: 16px;
 }
 
-.content-width, .section01 .container, .section03 .container, .section04 .container, .exercise {
+.content-width, .section01 .container, .section03 .container, .section04 .container, .exercise, .footer {
   width: 90%;
   margin: 0 auto;
   max-width: 1070px;
@@ -831,7 +835,7 @@ img {
   color: #535353;
 }
 
-.flex, .section01-heading, .section01-ul, .section01-ul-li > .li_img, .section03-heading, .section03-ul, .section04 .container {
+.flex, .section01-heading, .section01-ul, .section01-ul-li > .li_img, .section03-heading, .section03-ul, .section04 .container, .footer__nav, .footer__ul, .logo__text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -926,7 +930,7 @@ img {
 }
 
 .exercise {
-  background-color: pink;
+  background-color: green;
   height: 400px;
 }
 
@@ -944,9 +948,69 @@ img {
           justify-content: center;
 }
 
-.exercise > .list > .item {
-  height: 300px;
-  background-color: black;
+.footer {
+  background-color: white;
+}
+
+.footer__nav {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.footer__ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer__li {
+  padding: 0;
+  margin: 10px;
+}
+
+.footer__li > a {
+  color: #535353;
+}
+
+.footer__copyright {
+  text-align: center;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  max-width: 250px;
+  margin: 0 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.logo__text {
+  -ms-flex-preferred-size: 75%;
+      flex-basis: 75%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo__img {
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+}
+
+.logo__name {
+  color: #f18b00;
 }
 
 @media (min-width: 480px) {
@@ -997,6 +1061,39 @@ Stylesheet: 600px以上のタブレットやモニタで適用
     -ms-flex-preferred-size: 35%;
         flex-basis: 35%;
   }
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer .logo {
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+  }
+  .footer__nav {
+    -ms-flex-preferred-size: 70%;
+        flex-basis: 70%;
+  }
+  .footer__ul {
+    align-items: flex-end;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .footer__li {
+    margin-left: 0;
+    margin-right: 30px;
+  }
 }
 
 @media (min-width: 960px) {
@@ -1005,7 +1102,7 @@ Stylesheet: 600px以上のタブレットやモニタで適用
 Stylesheet: 960px以上のモニタで適用
 
 ******************************************************************/
-  .font-sm, .sub-title {
+  .font-sm, .sub-title, .logo__desc {
     font-size: 16px;
   }
   .font-md {
@@ -1014,7 +1111,7 @@ Stylesheet: 960px以上のモニタで適用
   .font-lr {
     font-size: 23px;
   }
-  .font-lg, .main-title {
+  .font-lg, .main-title, .logo__name {
     font-size: 36px;
   }
   .mb-lg, .exercise > .list > .item {
@@ -1071,6 +1168,27 @@ Stylesheet: 960px以上のモニタで適用
     -ms-flex-preferred-size: 33%;
         flex-basis: 33%;
   }
+  .footer_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .footer_container .logo {
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+    max-width: 400px;
+  }
+  .footer_container .footer__nav {
+    -ms-flex-preferred-size: 70%;
+        flex-basis: 70%;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -1079,5 +1197,13 @@ Stylesheet: 960px以上のモニタで適用
 Stylesheet: 1280px以上のモニタで適用
 
 ******************************************************************/
+  .logo__text {
+    -ms-flex-preferred-size: 75%;
+        flex-basis: 75%;
+  }
+  .logo__img {
+    -ms-flex-preferred-size: 25%;
+        flex-basis: 25%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
